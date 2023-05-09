@@ -21,7 +21,7 @@ This function implements the data-dependent bandwidth selection rule of Andrews 
 This function allows to demean and detrend time series.
 
 + **lr_varmod.m**
-This function estimate long-run variance matrices.
+This function estimates long-run variance matrices.
 
 + **lr_weights.m**
 This function computes weights used in **lr_varmod.m**.
