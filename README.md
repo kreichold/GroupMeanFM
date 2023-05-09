@@ -27,4 +27,4 @@ This function estimates long-run variance matrices.
 This function computes weights used in **lr_varmod.m**.
 
 ## Reference
-Wagner M., Reichold, K. (2023). [Panel Cointegrating Polynomial Regressions: Group-Mean Fully Modified OLS Estimation and Inference]([https://doi.org/10.48550/arXiv.2204.01373](https://doi.org/10.1080/07474938.2023.2178141)). Econometric Reviews. Forthcoming.
+Wagner M., Reichold, K. (2023). [Panel Cointegrating Polynomial Regressions: Group-Mean Fully Modified OLS Estimation and Inference]([https://doi.org/10.48550/arXiv.2204.01373](https://doi.org/10.1080/07474938.2023.2178141)). **Econometric Reviews**. Forthcoming.
