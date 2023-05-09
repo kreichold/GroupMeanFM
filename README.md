@@ -1,37 +1,30 @@
-# CointSelfNorm
-Self-Normalized Bootstrap Inference in Cointegrating Regressions
+# GroupMeanFM
+Group-Mean Fully Modified OLS Estimation and Inference in Panel Cointegrating Regressions
 
 ## Introduction
-This repository contains MATLAB code to test general linear restrictions on `beta` in cointegrating regressions of the form `y = D*delta + X*beta + u` using the self-normalized test statistics proposed in Reichold and Jentsch (2022). Here, `y` is a T-dimensional time series, `D` is a (T,d)-dimensional matrix of deterministic components, `X` is a (T,m)-dimensional matrix of integrated regressors, and `u` is a T-dimensional stationary error term.
-
-To obtain VAR sieve bootstrap critical values, the procedure fits a finite order VAR to the regression resdiuals (obtained with the IM-OLS estimator) and the first differences of the integrated regressors. The order of the VAR is determined by information criteria (either AIC or BIC). For all details, please see Reichold and Jentsch (2022).
-
-The VAR sieve bootstrap scheme may be of independent interest and can be extracted easily from the function **Self_Normalized_Bootstrap_Inference.m**.
+This repository contains MATLAB code to estimate panel cointegrating polynomial regressions using a group-mean fully modified OLS estimator as proposed in Wagner and Reichold (2023). The code allows to perform standard and cross-section dependence robust inference based upon the group-mean fully modified OLS estimator. No knowledge about the presence or absence of deterministic drifts in the regressors is required.
 
 ## Usage
 Download the files and move them into your current working directory, `pwd`.
 
 ## Main Function
 
-+ **Self_Normalized_Bootstrap_Inference.m**
-This is the only function that needs to be executed by the practitioner. It returns IM-OLS estimation results, realizations of self-normalized test statistics, and corresponding VAR sieve bootstrap critical values. 
++ **GroupMeanFMOLS.m**
+This is the only function that needs to be executed by the practitioner. It returns group-mean fully modified OLS estimation results. 
 
 ## Auxiliary Functions
 
-+ **IC_VAR.m**
-This function determines the optimal order of the VAR using either AIC or BIC.
++ **And_HAC91.m**
+This function implements the data-dependent bandwidth selection rule of Andrews (1991, Econometrica, 59, 817-858).
 
-+ **YuleWalker.m**
-This function uses the Yule-Walker estimator to fit a finite order VAR.
++ **demean_detrend.m**
+This function allows to demean and detrend time series.
 
-+ **boot_quantile.m**
-Given a number of bootstrap realizations of a test statistic, this function returns the corresponding bootstrap critical value.
++ **lr_varmod.m**
+This function estimate long-run variance matrices.
 
-+ **vec.m**
-This function stacks the columns of a matrix.
-
-## Illustration
-The script **example.m** provides a brief illustration on how to use the function **Self_Normalized_Bootstrap_Inference.m** in applications.
++ **lr_weights.m**
+This function computes weights used in **lr_varmod.m**.
 
 ## Reference
-Reichold, K., Jentsch, C. (2022). [A Bootstrap-Assisted Self-Normalization Approach to Inference in Cointegrating Regressions](https://doi.org/10.48550/arXiv.2204.01373). arXiv e-print 2204.01373.
+Wagner M., Reichold, K. (2023). [Panel Cointegrating Polynomial Regressions: Group-Mean Fully Modified OLS Estimation and Inference]([https://doi.org/10.48550/arXiv.2204.01373](https://doi.org/10.1080/07474938.2023.2178141)). Econometric Reviews. Forthcoming.
