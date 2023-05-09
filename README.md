@@ -2,7 +2,7 @@
 Group-Mean Fully Modified OLS Estimation and Inference in Panel Cointegrating Regressions
 
 ## Introduction
-This repository contains MATLAB code to estimate panel cointegrating polynomial regressions using a group-mean fully modified OLS estimator as proposed in Wagner and Reichold (2023). The code allows to perform standard and cross-section dependence robust inference based upon the group-mean fully modified OLS estimator. No knowledge about the presence or absence of deterministic drifts in the regressors is required.
+This repository contains MATLAB code to estimate panel cointegrating polynomial regressions using a group-mean fully modified OLS estimator as proposed in Wagner and Reichold (2023). The code also allows to perform standard and cross-section dependence robust inference based upon the group-mean fully modified OLS estimator. No knowledge about the presence or absence of deterministic drifts in the regressors is required.
 
 ## Usage
 Download the files and move them into your current working directory, `pwd`.
