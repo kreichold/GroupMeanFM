@@ -27,6 +27,6 @@ This function estimates long-run variance matrices.
 This function computes kernel weights used in **lr_varmod.m**.
 
 ## Reference
-Andrews, D.W.K. (1991). Heteroskedasticity and Autocorrelation Consistent Covariance Matrix Estimation. *Econometrica* **59**, 817--858.
+Andrews, D.W.K. (1991). Heteroskedasticity and Autocorrelation Consistent Covariance Matrix Estimation. *Econometrica* **59**, 817-858.
 
 Wagner M., Reichold, K. (2023). [Panel Cointegrating Polynomial Regressions: Group-Mean Fully Modified OLS Estimation and Inference](https://doi.org/10.1080/07474938.2023.2178141). *Econometric Reviews*. Forthcoming.
