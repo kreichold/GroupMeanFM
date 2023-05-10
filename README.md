@@ -15,7 +15,7 @@ This is the only function that needs to be executed by the practitioner. It retu
 ## Auxiliary Functions
 
 + **And_HAC91.m**
-This function implements the data-dependent bandwidth selection rule of Andrews (1991), which is used in **lr_varmod.m**.
+This function implements the data-dependent bandwidth selection rule of Andrews (1991) and is used in **lr_varmod.m**.
 
 + **demean_detrend.m**
 This function allows to demean and detrend time series.
